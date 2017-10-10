@@ -22,11 +22,8 @@ function respond() {
 }
 
 function parseMessage(message){
-  var xmlHttp = new XMLHttpRequest();
-  var theUrl = "http://leadscreening.com/gm.php";
-  xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-  xmlHttp.send( null );
-  return xmlHttp.responseText;
+  var mysql = require('mysql');
+  return 'fuk ya'
 }
 
 function postMessage(message) {
