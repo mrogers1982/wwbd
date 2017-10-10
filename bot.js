@@ -1,5 +1,9 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
+var mysql = require('mysql');
+var connection = mysql.createConnection(process.env.JAWSDB_URL);
+
+connection.connect();
 var botID = process.env.BOT_ID;
 
 function respond() {
