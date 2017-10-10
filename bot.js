@@ -22,7 +22,11 @@ function respond() {
 }
 
 function parseMessage(message){
-  return "Fuck this shit";
+  var xmlHttp = new XMLHttpRequest();
+  var theUrl = "http://leadscreening.com/gm.php";
+  xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+  xmlHttp.send( null );
+  return xmlHttp.responseText;
 }
 
 function postMessage(message) {
