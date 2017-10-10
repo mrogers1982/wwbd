@@ -11,6 +11,7 @@ function respond() {
     this.res.writeHead(200);
     var message = request.text;
     var message = message.replace("/cool guy","");
+    message = parseMessage(message);
     postMessage(message);
     this.res.end();
   } else {
@@ -18,6 +19,10 @@ function respond() {
     this.res.writeHead(200);
     this.res.end();
   }
+}
+
+function parseMessage(message){
+  return "Fuck this shit";
 }
 
 function postMessage(message) {
