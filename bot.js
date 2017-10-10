@@ -9,7 +9,8 @@ function respond() {
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    var message = str.replace("/cool guy","");
+    var message = request.text;
+    var message = message.replace("/cool guy","");
     postMessage(message);
     this.res.end();
   } else {
