@@ -1,6 +1,5 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
- var mysql = require('mysql');
 var botID = process.env.BOT_ID;
 
 function respond() {
@@ -22,7 +21,6 @@ function respond() {
 }
 
 function parseMessage(message){
- 
   return 'fuk ya'
 }
 
